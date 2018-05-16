@@ -65,17 +65,17 @@ const discoveryCredentials = vcapServices.getCredentials('discovery');
 
 
 var client = new Twitter({
-    consumer_key: 'rnWZji9ndPxDci4tynbo0DBfG',
-    consumer_secret: 'FGcBgdH1DXeiv561b1yLuPCb1Mvk8XA97g9sXO3T2mYxnPQKRV',
-    access_token_key: '319242598-FeckTHLmSWS1BApGliQzGuTGk1DB70K5Q0EMYxYF',
-    access_token_secret: '5oMdLpbPaNgf3SkYCyNdJH0bxpmLiGR1Qy8MBH6NtunOB'
+    consumer_key: '',
+    consumer_secret: '',
+    access_token_key: '',
+    access_token_secret: ''
 });
 
 
 var PersonalityInsightsV3 = require('watson-developer-cloud/personality-insights/v3');
 var personality_insights = new PersonalityInsightsV3({
-    username: '2c677739-1f34-4775-b033-f5dce6c6c3d6',
-    password: 'VNkzDVgIYcPv',
+    username: '',
+    password: '',
     version_date: '2017-10-13'
 });
 
@@ -230,10 +230,10 @@ app.post('/api/message', function(req, res) {
 
 
      if (queryInput == '{"text":"Arabic"}') {
-          workspaceID = '8a9ef81e-bd71-47fb-a83d-2da798842192';
+          workspaceID = '';
       }
       else if (queryInput == '{"text":"English"}') {
-           workspaceID = 'a72b3394-1fb1-43b2-9c34-7aad80bc754c';
+           workspaceID = '';
        }
 
       console.log("init")
