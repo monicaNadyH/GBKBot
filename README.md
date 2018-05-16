@@ -88,8 +88,14 @@ earlier setup steps (``DISCOVERY_COLLECTION_ID``, ``DISCOVERY_ENVIRONMENT_ID`` a
 
 
 
+Copy the [`env.sample`](env.sample) to `.env`.
+
+```
+$ cp env.sample .env
+```
 Edit the `.env` file with the necessary settings.
 
+#### `env.sample:`
 
 ```
 # Replace the credentials here with your own.
